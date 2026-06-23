@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Meta fallback matches the 4 second redirect exactly -->
+    <meta http-equiv="refresh" content="4; url=main.html" />
+    <title>Guidance of Grace</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&display=swap');
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: #000000; /* Pure black backdrop */
+            color: #f5e6c8;
+            font-family: 'Cinzel', serif;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            overflow: hidden;
+            position: relative;
+        }
+
+        /* Large golden ambient fog radiating from behind the loader */
+        .bg-glow {
+            position: absolute;
+            width: 600px;
+            height: 600px;
+            background: radial-gradient(circle, rgba(230, 175, 46, 0.18) 0%, rgba(184, 134, 11, 0.04) 50%, rgba(0,0,0,0) 70%);
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            z-index: 1;
+            pointer-events: none;
+        }
+
+        /* Perfectly centered container layout */
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            z-index: 2;
+        }
+
+        /* Your Custom Loader Code - Adjusted colors & centered layout */
+        .loader {
+            position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+            max-width: 6rem;
+            margin-top: 3rem;
+            margin-bottom: 3rem;
+        }
+
+        .loader:before,
+        .loader:after {
+            content: "";
+            position: absolute;
+            border-radius: 50%;
+            animation: pulsOut 1.8s ease-in-out infinite;
+            /* Heavy golden bloom effect */
+            filter: drop-shadow(0 0 1rem rgba(230, 175, 46, 0.85));
+        }
+
+        .loader:before {
+            width: 100%;
+            padding-bottom: 100%;
+            box-shadow: inset 0 0 0 1rem #e6af2e; /* Golden ring color */
+            animation-name: pulsIn;
+        }
+
+        .loader:after {
+            width: calc(100% - 2rem);
+            padding-bottom: calc(100% - 2rem);
+            box-shadow: 0 0 0 0 #ffd700; /* Vibrant inner gold color */
+        }
+
+        @keyframes pulsIn {
+            0% {
+                box-shadow: inset 0 0 0 1rem #e6af2e;
+                opacity: 1;
+            }
+            50%, 100% {
+                box-shadow: inset 0 0 0 0 #e6af2e;
+                opacity: 0;
+            }
+        }
+
+        @keyframes pulsOut {
+            0%, 50% {
+                box-shadow: 0 0 0 0 #ffd700;
+                opacity: 0;
+            }
+            100% {
+                box-shadow: 0 0 0 1rem #ffd700;
+                opacity: 1;
+            }
+        }
+
+        /* Typography Styles */
+        .status-text {
+            font-size: 2.2rem;
+            letter-spacing: 0.35em;
+            text-transform: uppercase;
+            color: #f7e2b4;
+            /* Elden Ring UI overlay banner text shadow */
+            text-shadow: 0 0 20px rgba(230, 175, 46, 0.7), 0 0 40px rgba(184, 134, 11, 0.4);
+            opacity: 0;
+            transform: scale(0.95);
+            animation: textFadeIn 2s ease-out 0.2s forwards;
+            margin-right: -0.35em; /* Perfectly balance letter spacing offsets */
+        }
+
+        .sub-text {
+            font-size: 0.85rem;
+            letter-spacing: 0.25em;
+            color: #a3977d;
+            margin-top: 15px;
+            text-transform: uppercase;
+            opacity: 0;
+            animation: fadeIn 1.5s ease-out 1s forwards;
+            margin-right: -0.25em;
+        }
+
+        /* Fade Animations */
+        @keyframes textFadeIn {
+            0% {
+                opacity: 0;
+                transform: scale(0.95);
+                filter: blur(4px);
+            }
+            100% {
+                opacity: 1;
+                transform: scale(1);
+                filter: blur(0);
+            }
+        }
+
+        @keyframes fadeIn {
+            to {
+                opacity: 0.8;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="bg-glow"></div>
+
+    <div class="container">
+        <!-- Rendered with your exact class and HTML layout -->
+        <span class="loader"></span>
+
+        <!-- UI Notification Typography -->
+        <h1 class="status-text">Lost Grace Discovered</h1>
+        <p class="sub-text">Following Guidance</p>
+    </div>
+
+    <script>
+        // Exact 4000 milliseconds (4 seconds) delay tracking
+        setTimeout(function() {
+            window.location.href = "main.html";
+        }, 4000);
+    </script>
+</body>
+</html>
