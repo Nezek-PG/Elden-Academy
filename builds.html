@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Elden Ring Academy</title>
+<link rel="stylesheet" href="main_smf.css">
+<link rel="stylesheet" href="main_smf1.css">
+<script src="opti.js" defer></script>
+</head>
+<body>
+<div class="loading-screen" id="loader"><div class="loading-ring"></div></div>
+
+<header class="site-header">
+ <a href="main.html" class="logo">
+    <img src="./img/elden.webp" alt="logo elden" style="width: 40px;">
+    <span data-i18n="siteName">Elden Academy</span>
+  </a>
+  <nav class="main-nav" id="mainNav">
+    <a href="main.html" data-i18n="navHome">Home</a>
+    <a href="main.html#bosses" data-i18n="navBosses">Bosses</a>
+    <a href="builds.html" class="active" data-i18n="navBuilds">Builds</a>
+    <a href="endings.html" data-i18n="navEndings">Endings</a>
+  </nav>
+  <div class="header-right">
+    <div class="lang-switch">
+      <button data-lang="en" class="active">EN</button>
+      <span class="sep">|</span>
+      <button data-lang="pl">PL</button>
+      <span class="sep">|</span>
+      <button data-lang="de">DE</button>
+    </div>
+    <button class="menu-toggle" id="menuToggle" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<main class="page-enter">
+  <section class="hero-notify fade-in">
+    <p class="label" data-i18n="buildsLabel">Armory</p>
+    <h1><span data-i18n="buildsTitle1">Best</span> <span class="gold-text" data-i18n="buildsTitle2">Builds</span></h1>
+    <p class="sub" data-i18n="buildsSub">Curated loadouts for every playstyle weapons, talismans, armor, and ashes of war.</p>
+  </section>
+
+  <div class="container">
+    <div class="sub-nav fade-in" id="buildFilter">
+      <a href="#" data-filter="all" class="active" data-i18n="filterAll">All</a>
+      <a href="#" data-filter="strength" data-i18n="filterStr">Strength</a>
+      <a href="#" data-filter="dexterity" data-i18n="filterDex">Dexterity</a>
+      <a href="#" data-filter="faith" data-i18n="filterFaith">Faith</a>
+      <a href="#" data-filter="intelligence" data-i18n="filterInt">Intelligence</a>
+      <a href="#" data-filter="arcane" data-i18n="filterArc">Arcane</a>
+    </div>
+
+    <div class="builds-grid" id="buildsGrid"></div>
+  </div>
+</main>
+
+
+<footer class="site-footer">
+ 
+  <br>
+
+  <img src="https://uxwing.com/wp-content/themes/uxwing/download/brands-and-social-media/discord-white-icon.png" alt="discord icon" style="width: 30px;"> nez3q
+ 
+</footer>
+
+<script src="main_images.js"></script>
+<script src="main_data.js"></script>
+<script src="main.js"></script>
+<script>
+document.addEventListener('DOMContentLoaded',function(){
+  ER.initBuilds();
+});
+</script>
+</body>
+</html>

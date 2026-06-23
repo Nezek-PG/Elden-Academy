@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Elden Ring Academy</title>
+<link rel="stylesheet" href="main_smf.css">
+<link rel="stylesheet" href="main_smf1.css">
+<script src="opti.js" defer></script>
+</head>
+<body>
+<div class="loading-screen" id="loader"><div class="loading-ring"></div></div>
+
+<header class="site-header">
+  <a href="main.html" class="logo">
+    <img src="./img/elden.webp" alt="logo elden" style="width: 40px;">
+    <span data-i18n="siteName">Elden Academy</span>
+  </a>
+  <nav class="main-nav" id="mainNav">
+    <a href="main.html" class="active" data-i18n="navHome">Home</a>
+    <a href="main.html#bosses" data-i18n="navBosses">Bosses</a>
+    <a href="builds.html" data-i18n="navBuilds">Builds</a>
+    <a href="endings.html" data-i18n="navEndings">Endings</a>
+  </nav>
+  <div class="header-right">
+    <div class="lang-switch">
+      <button data-lang="en" class="active">EN</button>
+      <span class="sep">|</span>
+      <button data-lang="pl">PL</button>
+      <span class="sep">|</span>
+      <button data-lang="de">DE</button>
+    </div>
+    <button class="menu-toggle" id="menuToggle" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<main class="page-enter">
+  <section class="hero-notify fade-in">
+    <p class="label" data-i18n="heroLabel">Notification</p>
+    <h1><span data-i18n="heroTitle1">New Boss</span> <span class="gold-text" data-i18n="heroTitle2">Discovered</span></h1>
+    <p class="sub" data-i18n="heroSub">Explore the Lands Between. Study the demigods. Survive the Night of the Black Knives.</p>
+  </section>
+
+  <section class="container" id="featuredSection">
+    <div class="featured-card fade-in scale-in" id="featuredCard"></div>
+  </section>
+
+  <section class="container" id="bosses">
+    <div class="section-title fade-in">
+      <p class="archive-label" data-i18n="catLabel">Archive</p>
+      <h2 data-i18n="bossSectionTitle">Shardbearers &amp; Legends</h2>
+    </div>
+
+    <div class="category-row fade-in" id="categoryRow"></div>
+
+    <div class="boss-grid" id="bossGrid"></div>
+  </section>
+
+  <section class="container" id="archive">
+    <div class="section-title fade-in">
+      <p class="archive-label" data-i18n="aboutLabel">About</p>
+      <h2 data-i18n="aboutTitle">The Lands Between</h2>
+    </div>
+    <div class="featured-card fade-in" style="margin-bottom:80px">
+      <div class="featured-card-inner">
+        <div class="featured-content">
+          <p class="unlock-label" data-i18n="aboutUnlock">Archive Entry</p>
+          <h2><span class="gold-text" data-i18n="aboutEntryTitle">The Erdtree</span></h2>
+          <p class="quote" data-i18n="aboutQuote">"The Erdtree governs all. The demigods, each a shard of the Elden Ring, vie for power."</p>
+          <p data-i18n="aboutText">This archive catalogs the greatest threats of the Lands Between — their lore, locations, and strategies for the Tarnished who would become Elden Lord.</p>
+          <a href="main3.html" class="btn-link"><span data-i18n="viewBuilds">View Best Builds</span> <span class="arrow">→</span></a>
+        </div>
+        <div class="featured-image">
+          <div class="photo-wrap">
+            <img src="https://assetsio.gnwcdn.com/elden-ring-shadow-of-the-erdtree-recenzja-headline.png?width=690&quality=85&format=jpg&dpr=3&auto=webp" alt="Elden Ring" loading="lazy" referrerpolicy="no-referrer">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer"
+ 
+  <br>
+
+  <img src="https://uxwing.com/wp-content/themes/uxwing/download/brands-and-social-media/discord-white-icon.png" alt="discord icon" style="width: 30px;">
+  nez3q
+</footer>
+
+<script src="main_images.js"></script>
+<script src="main_data.js"></script>
+<script src="main.js"></script>
+<script>
+document.addEventListener('DOMContentLoaded',function(){
+  ER.initHome();
+});
+</script>
+</body>
+</html>

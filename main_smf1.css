@@ -1,0 +1,200 @@
+.fade-in{
+  opacity:0;
+  transform:translateY(24px);
+  transition:opacity .8s ease,transform .8s ease;
+}
+
+.fade-in.visible{
+  opacity:1;
+  transform:translateY(0);
+}
+
+.fade-in-left{
+  opacity:0;
+  transform:translateX(-30px);
+  transition:opacity .8s ease,transform .8s ease;
+}
+
+.fade-in-left.visible{
+  opacity:1;
+  transform:translateX(0);
+}
+
+.fade-in-right{
+  opacity:0;
+  transform:translateX(30px);
+  transition:opacity .8s ease,transform .8s ease;
+}
+
+.fade-in-right.visible{
+  opacity:1;
+  transform:translateX(0);
+}
+
+.scale-in{
+  opacity:0;
+  transform:scale(.92);
+  transition:opacity .7s ease,transform .7s ease;
+}
+
+.scale-in.visible{
+  opacity:1;
+  transform:scale(1);
+}
+
+.stagger-1{transition-delay:.1s}
+.stagger-2{transition-delay:.2s}
+.stagger-3{transition-delay:.3s}
+.stagger-4{transition-delay:.4s}
+.stagger-5{transition-delay:.5s}
+.stagger-6{transition-delay:.6s}
+
+.hero-notify h1 .gold-text{
+  animation:goldShimmer 4s ease-in-out infinite;
+}
+
+@keyframes goldShimmer{
+  0%,100%{filter:brightness(1)}
+  50%{filter:brightness(1.3)}
+}
+
+.featured-card::before{
+  content:'';
+  position:absolute;
+  inset:-1px;
+  border-radius:var(--radius);
+  padding:1px;
+  background:linear-gradient(135deg,transparent,rgba(197,160,89,.3),transparent);
+  -webkit-mask:linear-gradient(#fff 0 0) content-box,linear-gradient(#fff 0 0);
+  mask:linear-gradient(#fff 0 0) content-box,linear-gradient(#fff 0 0);
+  -webkit-mask-composite:xor;
+  mask-composite:exclude;
+  opacity:0;
+  transition:opacity .6s;
+  pointer-events:none;
+}
+
+.featured-card:hover::before{opacity:1}
+
+.boss-card::after{
+  content:'';
+  position:absolute;
+  inset:0;
+  border-radius:var(--radius);
+  box-shadow:inset 0 0 0 0 rgba(197,160,89,.2);
+  transition:box-shadow .4s;
+  pointer-events:none;
+}
+
+.boss-card{position:relative}
+.boss-card:hover::after{box-shadow:inset 0 0 30px rgba(197,160,89,.06)}
+
+.gold-glow{
+  animation:pulseGlow 3s ease-in-out infinite;
+}
+
+@keyframes pulseGlow{
+  0%,100%{text-shadow:0 0 8px rgba(197,160,89,.2)}
+  50%{text-shadow:0 0 20px rgba(197,160,89,.5)}
+}
+
+.page-enter{
+  animation:pageEnter .6s ease forwards;
+}
+
+@keyframes pageEnter{
+  from{opacity:0;transform:translateY(12px)}
+  to{opacity:1;transform:translateY(0)}
+}
+
+.boss-detail-image img{
+  animation:floatImg 6s ease-in-out infinite;
+}
+
+@keyframes floatImg{
+  0%,100%{transform:translateY(0)}
+  50%{transform:translateY(-8px)}
+}
+
+.category-card::after{
+  content:'';
+  position:absolute;
+  inset:0;
+  background:linear-gradient(to top,rgba(0,0,0,.7),transparent);
+  pointer-events:none;
+}
+
+.build-card{
+  animation:cardReveal .5s ease backwards;
+}
+
+.builds-grid .build-card:nth-child(1){animation-delay:.05s}
+.builds-grid .build-card:nth-child(2){animation-delay:.1s}
+.builds-grid .build-card:nth-child(3){animation-delay:.15s}
+.builds-grid .build-card:nth-child(4){animation-delay:.2s}
+.builds-grid .build-card:nth-child(5){animation-delay:.25s}
+.builds-grid .build-card:nth-child(6){animation-delay:.3s}
+
+@keyframes cardReveal{
+  from{opacity:0;transform:translateY(20px)}
+  to{opacity:1;transform:translateY(0)}
+}
+
+.lang-switch button.active{
+  position:relative;
+}
+
+.lang-switch button.active::after{
+  content:'';
+  position:absolute;
+  bottom:0;left:50%;
+  transform:translateX(-50%);
+  width:12px;height:1px;
+  background:var(--gold);
+}
+
+.map-section{
+  animation:borderPulse 5s ease-in-out infinite;
+}
+
+@keyframes borderPulse{
+  0%,100%{border-color:rgba(255,255,255,.15)}
+  50%{border-color:rgba(197,160,89,.3)}
+}
+
+.loading-screen{
+  position:fixed;
+  inset:0;
+  background:var(--bg);
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  z-index:9999;
+  transition:opacity .5s,visibility .5s;
+}
+
+.loading-screen.hidden-load{
+  opacity:0;
+  visibility:hidden;
+  pointer-events:none;
+}
+
+.loading-ring{
+  width:48px;height:48px;
+  border:1px solid var(--border);
+  border-top-color:var(--gold);
+  border-radius:50%;
+  animation:spin 1s linear infinite;
+}
+
+@keyframes spin{
+  to{transform:rotate(360deg)}
+}
+
+@media(prefers-reduced-motion:reduce){
+  *,*::before,*::after{
+    animation-duration:.01ms!important;
+    animation-iteration-count:1!important;
+    transition-duration:.01ms!important;
+  }
+}

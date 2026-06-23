@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Elden Academy - Boss</title>
+<link rel="stylesheet" href="main_smf.css">
+<link rel="stylesheet" href="main_smf1.css">
+<script src="opti.js" defer></script>
+</head>
+<body>
+<div class="loading-screen" id="loader"><div class="loading-ring"></div></div>
+
+<header class="site-header">
+ <a href="main.html" class="logo">
+    <img src="./img/elden.webp" alt="logo elden" style="width: 40px;">
+    <span data-i18n="siteName">Elden Academy</span>
+  </a>
+  <nav class="main-nav" id="mainNav">
+    <a href="main.html" data-i18n="navHome">Home</a>
+    <a href="main.html#bosses" class="active" data-i18n="navBosses">Bosses</a>
+    <a href="builds.html" data-i18n="navBuilds">Builds</a>
+    <a href="endings.html" data-i18n="navEndings">Endings</a>
+  </nav>
+  <div class="header-right">
+    <div class="lang-switch">
+      <button data-lang="en" class="active">EN</button>
+      <span class="sep">|</span>
+      <button data-lang="pl">PL</button>
+      <span class="sep">|</span>
+      <button data-lang="de">DE</button>
+    </div>
+    <button class="menu-toggle" id="menuToggle" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<main class="page-enter">
+  <div class="container boss-detail" id="bossDetail">
+    <a href="main.html#bosses" class="back-link fade-in">← <span data-i18n="backBosses">Back to Bosses</span></a>
+    <div id="bossContent"></div>
+  </div>
+</main>
+
+
+<footer class="site-footer">
+ 
+  <br>
+
+  <img src="https://uxwing.com/wp-content/themes/uxwing/download/brands-and-social-media/discord-white-icon.png" alt="discord icon" style="width: 30px;"> nez3q
+ 
+</footer>
+
+<script src="main_images.js"></script>
+<script src="main_data.js"></script>
+<script src="main.js"></script>
+<script>
+document.addEventListener('DOMContentLoaded',function(){
+  ER.initBossDetail();
+});
+</script>
+</body>
+</html>
