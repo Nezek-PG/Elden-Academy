@@ -403,7 +403,7 @@ window.ER_BOSSES = [
   },
   {
     id: 'godfrey', category: 'shard',
-    image: './img/Godfrey1.webp',
+    image: './img/godfrey1.webp',
     en: { name: 'Godfrey, First Elden Lord', quote: '"A warrior, after all."', region: 'Leyndell, Ashen Capital',
       lore: 'Godfrey was the first Elden Lord and consort of Queen Marika. Stripped of grace after becoming Hoarah Loux, he returned as a Tarnished to reclaim his throne, bearing the scars of countless battles and the spirit of a true warrior.',
       location: 'Erdtree Sanctuary, Leyndell Ashen Capital. After burning the Erdtree.',
