@@ -183,6 +183,7 @@ main{padding-top:var(--nav-h)}
   letter-spacing:.08em;
   line-height:1.2;
   margin-bottom:20px;
+  text-shadow: 0 0 50px rgba(197, 160, 89, 0.9);
 }
 
 .hero-notify .sub{
