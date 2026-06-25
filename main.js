@@ -235,7 +235,7 @@ const i18n = {
     grid.innerHTML = bosses.map((b, i) => {
       const d = b[lang] || b.en;
       const imgUrl = bossImage(b);
-      return `<a href="main2.html?id=${b.id}" class="boss-card fade-in stagger-${(i % 6) + 1}">
+      return `<a href="main2?id=${b.id}" class="boss-card fade-in stagger-${(i % 6) + 1}">
         <div class="boss-card-img">
           <img src="${imgUrl}" alt="${d.name}" loading="lazy" referrerpolicy="no-referrer" onerror="this.onerror=null;this.src='${FALLBACK_IMG}'">
         </div>
@@ -261,7 +261,7 @@ const i18n = {
         <h2><span class="gold-text">${parts[0]}</span>${parts[1] ? ',' + parts[1] : ''}</h2>
         <p class="quote">${d.quote}</p>
         <p>${d.lore.substring(0, 220)}...</p>
-        <a href="main2.html?id=${b.id}" class="btn-link"><span>${t('readMore')}</span> <span class="arrow">→</span></a>
+        <a href="main2?id=${b.id}" class="btn-link"><span>${t('readMore')}</span> <span class="arrow">→</span></a>
       </div>
       <div class="featured-image fade-in-right">${photoBlock(imgUrl, d.name)}</div>
     </div>`;
@@ -309,7 +309,7 @@ function renderBossDetailPage() {
           <div class="info-block"><h3>${t('lore')}</h3><p>${d.lore}</p></div>
           <div class="info-block"><h3>${t('location')}</h3><p>${d.location}</p></div>
           <div class="info-block"><h3>${t('strategy')}</h3><ul>${d.strategy.map(s => `<li>${s}</li>`).join('')}</ul></div>
-          <a href="main2.html?id=${next.id}" class="btn-link" style="margin-top:16px"><span>${t('nextLoot')}: ${nd.name.split(',')[0]}</span> <span class="arrow">→</span></a>
+          <a href="main2?id=${next.id}" class="btn-link" style="margin-top:16px"><span>${t('nextLoot')}: ${nd.name.split(',')[0]}</span> <span class="arrow">→</span></a>
         </div>
         <div class="boss-detail-image fade-in-right">${photoBlock(photoUrl, d.name)}</div>
       </div>
