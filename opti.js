@@ -1,4 +1,5 @@
-// Funkcja kompresująca plik graficzny
+
+window.adblockerDisabled = true;
 function optimizeImage(file, quality, maxWidth) {
   return new Promise((resolve, reject) => {
     const reader = new FileReader();
