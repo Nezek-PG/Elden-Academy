@@ -12,3 +12,8 @@ Disallow:
 
 User-agent: Applebot-Extended
 Disallow:
+
+User-agent: *
+Allow: /
+
+Sitemap: https://twojanazwa.github.io/nazwa-repozytorium/sitemap.xml
