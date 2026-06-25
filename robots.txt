@@ -1,19 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://twojanazwa.github.io/nazwa-repozytorium/sitemap.xml
-
-User-agent: GPTBot
-Disallow:
-
-User-agent: Google-Extended
-Disallow:
-
-User-agent: PerplexityBot
-Disallow:
-
-User-agent: ClaudeBot
-Disallow:
-
-User-agent: Applebot-Extended
-Disallow:
+Sitemap: https://eldenring.pl/sitemap.xml
