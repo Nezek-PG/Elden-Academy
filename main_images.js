@@ -39,52 +39,38 @@ window.ER_IMG = {
   },
 
   buildPhoto(id) {
-    const p = {
-      'bloodhound-fang': './img/blood.webp',
-      blasphemous: './img/blade.webp',
-      moonveil: './img/moon.webp',
-      'greatsword-str': './img/great.webp',
-      rivers: './img/river.webp',
-      'death-poker': './img/death.webp',
-      'giant-crusher': './img/one.webp',
-    };
-    return p[id] || this.STEAM_HERO;
+      const p = {
+        'bloodhound-fang': './img/blood.webp',
+        blasphemous: './img/blade.webp',
+        moonveil: './img/moon.webp',
+        'greatsword-str': './img/great.webp',
+        rivers: './img/river.webp',
+        'death-poker': './img/death.webp',
+        'giant-crusher': './img/one.webp',
+        
+        // Nowe buildy z podstawki
+        'comet-azur-mage': './img/azur.webp',
+        'double-curved-bleed': './img/curved.webp',
+        
+        // Nowe buildy z DLC
+        'bloodfiend-arm': './img/bloodfiend.webp',
+        'perfume-bottle-spark': './img/perfume.webp'
+      };
+      return p[id] || this.STEAM_HERO;
   },
-
   categoryPhoto(key) {
     const p = {
       all: 'https://cdn.cloudflare.steamstatic.com/steam/apps/1245620/library_hero.jpg',
       shard: './img/shr.webp',
       legend: './img/legend.webp',
       field: './img/mask.webp',
-      final: './img/marika.webp'
+      final: './img/marika.webp',
+      dlc: './img/shadow.webp'
     };
     return p[key] || this.STEAM_HERO;
   },
 
-  // ─── REGIONS ────────────────────────────────────────────────────────────────
-  // Add your own image URLs here for each region key.
-  // These are used in boss cards and detail pages.
-  regionPhoto(key) {
-    
-    const p = {
-      limgrave:         'https://eldenring.wiki.fextralife.com/file/Elden-Ring/limgrave_location_map_elden_ring_wiki_guide_600px.jpg',
-      'stormveil-castle': 'https://static.wikia.nocookie.net/eldenring/images/c/c3/Stormveil_Castle.jpg/revision/latest/scale-to-width-down/1200?cb=20220315180000',
-      liurnia:          'https://static.wikia.nocookie.net/eldenring/images/6/6c/Liurnia_of_the_Lakes.jpg/revision/latest/scale-to-width-down/1200?cb=20220315180000',
-      caelid:           'https://static.wikia.nocookie.net/eldenring/images/8/8b/Caelid_Overview.jpg/revision/latest/scale-to-width-down/1200?cb=20220315180000',
-      altus:            'https://static.wikia.nocookie.net/eldenring/images/0/0e/Altus_Plateau.jpg/revision/latest/scale-to-width-down/1200?cb=20220315180000',
-      'mt-gelmir':      'https://static.wikia.nocookie.net/eldenring/images/3/3f/Mt._Gelmir.jpg/revision/latest/scale-to-width-down/1200?cb=20220315180000',
-      'leyndell':       'https://static.wikia.nocookie.net/eldenring/images/2/2d/Leyndell_Royal_Capital.jpg/revision/latest/scale-to-width-down/1200?cb=20220315180000',
-      'mountaintops':   'https://static.wikia.nocookie.net/eldenring/images/4/41/Mountaintops_of_the_Giants.jpg/revision/latest/scale-to-width-down/1200?cb=20220315180000',
-      'farum-azula':    'https://static.wikia.nocookie.net/eldenring/images/a/a3/Crumbling_Farum_Azula.jpg/revision/latest/scale-to-width-down/1200?cb=20220315180000',
-      'haligtree':      'https://static.wikia.nocookie.net/eldenring/images/f/f4/Miquella%27s_Haligtree.jpg/revision/latest/scale-to-width-down/1200?cb=20220315180000',
-      'nokron':         'https://static.wikia.nocookie.net/eldenring/images/0/08/Nokron%2C_Eternal_City.jpg/revision/latest/scale-to-width-down/1200?cb=20220315180000',
-      'siofra':         'https://static.wikia.nocookie.net/eldenring/images/5/58/Siofra_River.jpg/revision/latest/scale-to-width-down/1200?cb=20220315180000',
-      'lake-of-rot':    'https://static.wikia.nocookie.net/eldenring/images/e/e4/Lake_of_Rot.jpg/revision/latest/scale-to-width-down/1200?cb=20220315180000'
 
-    };
-    return p[key] || this.STEAM_HERO;
-  }
 };
 
 window.ER_GEAR = {
@@ -193,5 +179,67 @@ window.ER_GEAR = {
       { n: "Two-Handed Sword Talisman", w: "Two-Handed_Sword_Talisman" },
       { n: "Red-Feathered Branchsword", w: "Red-Feathered_Branchsword" }
     ]
+  },
+  // ─── NOWE BUILDY Z PODSTAWKI ───────────────────────────────────────────────
+  'comet-azur-mage': {
+    weapon: [
+      { n: "Lusat's Glintstone Staff +10", w: "Lusat's_Glintstone_Staff" },
+      { n: "Carian Regal Scepter", w: "Carian_Regal_Scepter" }
+    ],
+    ash: [{ n: "No Skill", w: "No_Skill" }],
+    helmet: [{ n: "Azur's Glintstone Crown", w: "Azur's_Glintstone_Crown" }],
+    armor: [{ n: "Sorcerer Robes", w: "Sorcerer_Robes" }],
+    gloves: [{ n: "Battlemage Manchettes", w: "Battlemage_Manchettes" }],
+    legs: [{ n: "Sorcerer Leggings", w: "Sorcerer_Leggings" }],
+    talismans: [
+      { n: "Graven-Mass Talisman", w: "Graven-Mass_Talisman" },
+      { n: "Magic Scorpion Charm", w: "Magic_Scorpion_Charm" },
+      { n: "Radagon Icon", w: "Radagon_Icon" },
+      { n: "Ritual Sword Talisman", w: "Ritual_Sword_Talisman" }
+    ]
+  },
+  'double-curved-bleed': {
+    weapon: [{ n: "Scavenger's Curved Sword +25 x2", w: "Scavenger's_Curved_Sword" }],
+    ash: [{ n: "Seppuku", w: "Seppuku" }],
+    helmet: [{ n: "White Mask", w: "White_Mask" }],
+    armor: [{ n: "Raptor's Black Feathers", w: "Raptor's_Black_Feathers" }],
+    gloves: [{ n: "Malformed Dragon Gauntlets", w: "Malformed_Dragon_Gauntlets" }],
+    legs: [{ n: "Bull-Goat Greaves", w: "Bull-Goat_Greaves" }],
+    talismans: [
+      { n: "Claw Talisman", w: "Claw_Talisman" },
+      { n: "Lord of Blood's Exultation", w: "Lord_of_Blood's_Exultation" },
+      { n: "Rotten Winged Sword Insignia", w: "Rotten_Winged_Sword_Insignia" },
+      { n: "Millicent's Prosthesis", w: "Millicent's_Prosthesis" }
+    ]
+  },
+  // ─── BUILDY Z DLC ──────────────────────────────────────────────────────────
+  'bloodfiend-arm': {
+    weapon: [{ n: "Bloodfiend's Arm +25", w: "Bloodfiend's_Arm" }],
+    ash: [{ n: "Cragblade", w: "Cragblade" }],
+    helmet: [{ n: "White Mask", w: "White_Mask" }],
+    armor: [{ n: "Ansbach's Attire", w: "Ansbach's_Attire" }],
+    gloves: [{ n: "Verdigris Gauntlets", w: "Verdigris_Gauntlets" }],
+    legs: [{ n: "Verdigris Greaves", w: "Verdigris_Greaves" }],
+    talismans: [
+      { n: "Axe Talisman", w: "Axe_Talisman" },
+      { n: "Lord of Blood's Exultation", w: "Lord_of_Blood's_Exultation" },
+      { n: "Two-Handed Sword Talisman", w: "Two-Handed_Sword_Talisman" },
+      { n: "Dragoncrest Greatshield Talisman", w: "Dragoncrest_Greatshield_Talisman" }
+    ]
+  },
+  'perfume-bottle-spark': {
+    weapon: [{ n: "Lightning Perfume Bottle +25", w: "Lightning_Perfume_Bottle" }],
+    ash: [{ n: "Rolling Sparks", w: "Rolling_Sparks" }],
+    helmet: [{ n: "Rakshasa Helm", w: "Rakshasa_Helm" }],
+    armor: [{ n: "Rakshasa Armor", w: "Rakshasa_Armor" }],
+    gloves: [{ n: "Rakshasa Gauntlets", w: "Rakshasa_Gauntlets" }],
+    legs: [{ n: "Rakshasa Greaves", w: "Rakshasa_Greaves" }],
+    talismans: [
+      { n: "Perfumer's Talisman", w: "Perfumer's_Talisman" },
+      { n: "Lightning Scorpion Charm", w: "Lightning_Scorpion_Charm" },
+      { n: "Shard of Alexander", w: "Shard_of_Alexander" },
+      { n: "Ritual Sword Talisman", w: "Ritual_Sword_Talisman" }
+    ]
   }
+
 };

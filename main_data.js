@@ -468,14 +468,250 @@ window.ER_BOSSES = [
       grace: 'Sammelpunkt: Fractured Marika nach Sieg.',
       strategy: ['Schwarze Flamme oder Bestimmter Tod', 'Heiliger Schaden vermeiden', 'Zur Bestie rennen wenn sie fliegt', 'Elden Stars: im Kreis laufen', 'Black Knife Tiche für Aggro', 'Durch Ringlücken rollen'] }
   },
+// DLCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
+// DLCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
+// DLCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
+// DLCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
+// DLCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
+// DLCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
+// DLCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
+// DLCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
+// DLCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
+// DLCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
+// DLCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
+// DLCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
+// DLCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
+// DLCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
+{
+    id: 'divine-beast-dancing-lion', category: 'dlc',
+    image: './img/dancing-lion.webp',
+    en: { 
+      name: 'Divine Beast Dancing Lion', quote: '"The song of the tower, ancient and clear..."', region: 'Gravesite Plain',
+      lore: 'An ancient deity of Belurat, Tower Settlement, channeled through the ritual dance of sculptors wearing a massive beast head. It commands the elements of lightning, frost, and storm.',
+      location: 'At the highest point of Belurat, Tower Settlement.',
+      mapDesc: 'Belurat, Tower Settlement — accessible early in the DLC from the Gravesite Plain.',
+      grace: 'Site of Grace: Theatre of Divine Beast appears after victory.',
+      strategy: [
+        'Roll through the elemental transitions to avoid massive AOE damage',
+        'Use Lightning and Frost resistance talismans depending on its current phase',
+        'The boss has high poise, heavy jumping attacks can stagger it',
+        'Summon Red Bear or Hornsent if their signs are available outside the fog gate'
+      ] 
+    },
+    pl: { 
+      name: 'Boska Bestia Tańczący Lew', quote: '"Pieśń wieży, starożytna i czysta..."', region: 'Cmentarna Równina',
+      lore: 'Starożytne bóstwo z Belurat, przywoływane poprzez rytualny taniec rzeźbiarzy noszących wielką maskę bestii. Włada błyskawicami, mrozem i burzą.',
+      location: 'Na najwyższym punkcie Belurat, Osady Wieżowej.',
+      mapDesc: 'Belurat, Osada Wieżowa — dostępne na początku DLC z Cmentarnej Równiny.',
+      grace: 'Miejsce Łaski: Teatr Boskiej Bestii pojawia się po zwycięstwie.',
+      strategy: [
+        'Rób uniki podczas zmian żywiołów, aby uniknąć masowych obrażeń obszarowych',
+        'Używaj talizmanów zwiększających odporność na błyskawice i mróz',
+        'Boss ma wysoką równowagę (poise), ciężkie ataki z wyskoku mogą go ogłuszyć',
+        'Przywołaj Hornsenta, jeśli jego znak jest dostępny przed mgłą'
+      ] 
+    },
+    de: { 
+      name: 'Göttliche Bestie Tanzender Löwe', quote: '"Das Lied des Turms, alt und klar..."', region: 'Grabfeld-Ebene',
+      lore: 'Eine alte Gottheit von Belurat, kanalisiert durch den rituellen Tanz von Bildhauern. Beherrscht Blitze, Frost und Stürme.',
+      location: 'Am höchsten Punkt von Belurat, Turmsiedlung.',
+      mapDesc: 'Belurat, Turmsiedlung — früh im DLC von der Grabfeld-Ebene aus erreichbar.',
+      grace: 'Ort der Gnade: Theater der göttlichen Bestie erscheint nach dem Sieg.',
+      strategy: [
+        'Rolle durch die Elementarwechsel, um massiven Umgebungsschaden zu vermeiden',
+        'Nutze Blitz- und Frostresistenz-Talismane je nach aktueller Phase',
+        'Der Boss hat hohe Haltung, schwere Sprungangriffe können ihn brechen',
+        'Beschwöre Hornsent, falls sein Zeichen vor dem Nebeltor aktiv ist'
+      ] 
+    }
+  },
+{
+    id: 'rellana-twin-moon-knight', category: 'dlc',
+    image: './img/rellana.webp',
+    en: { 
+      name: 'Rellana, Twin Moon Knight', quote: '"The moon was ever near, but never reached."', region: 'Scadu Altus',
+      lore: 'The younger sister of Rennala, Queen of the Full Moon. Rellana renounced her Carian lineage to follow Messmer the Impaler into the Land of Shadow, dual-wielding swords of glintstone and fire.',
+      location: 'Encountered at the end of Castle Ensis, guarding the exit to Scadu Altus.',
+      mapDesc: 'Castle Ensis — the fortress bridging Gravesite Plain and Scadu Altus.',
+      grace: 'Site of Grace: Ensis Moongazing Grounds appears after victory.',
+      strategy: [
+        'Parrying is highly effective if you are skilled with the Buckler',
+        'Phase 2 Twin Moon attack: Jump three times synchronously as the moons hit the floor',
+        'She is highly aggressive — stay close and roll towards her left side',
+        'Bring Magic and Fire damage negation items (like Golden Vow or Liver items)'
+      ] 
+    },
+    pl: { 
+      name: 'Rellana, Rycerz Bliźniaczych Księżyców', quote: '"Księżyc był zawsze blisko, lecz nigdy nieosiągalny."', region: 'Altus Cienia',
+      lore: 'Młodsza siostra Rennali, Królowej Pełni Księżyca. Zrzekła się cariańskiego dziedzictwa, by podążyć za Messmerem Palownikiem do Krainy Cienia, władając mieczami błyszczącego kamienia i ognia.',
+      location: 'Na końcu Zamku Ensis, strzeże wyjścia na Altus Cienia.',
+      mapDesc: 'Zamek Ensis — forteca łącząca Cmentarną Równinę z Altusem Cienia.',
+      grace: 'Miejsce Łaski: Tereny Obserwacji Księżyca Ensis po zwycięstwie.',
+      strategy: [
+        'Parowanie (Parry) jest niezwykle skuteczne, jeśli potrafisz używać puklerza',
+        'Atak Bliźniaczych Księżyców w fazie 2: Podskocz trzy razy w rytm uderzeń księżyców o ziemię',
+        'Jest bardzo agresywna — trzymaj się blisko i unikaj ataków przetaczając się w jej lewą stronę',
+        'Zabierz przedmioty redukujące obrażenia od magii i ognia'
+      ] 
+    },
+    de: { 
+      name: 'Rellana, Zwillingsmond-Ritterin', quote: '"Der Mond war immer nah, aber nie erreicht."', region: 'Scadu-Altus',
+      lore: 'Die jüngere Schwester von Rennala. Sie verzichtete auf ihr carianisches Erbe, um Messmer dem Pfähler in das Schattenland zu folgen. Führt Schwerter aus Schimmerstein und Feuer.',
+      location: 'Am Ende von Schloss Ensis, bewacht den Ausgang nach Scadu-Altus.',
+      mapDesc: 'Schloss Ensis — die Festung zwischen der Grabfeld-Ebene und Scadu-Altus.',
+      grace: 'Ort der Gnade: Ensis-Mondschauplatz erscheint nach dem Sieg.',
+      strategy: [
+        'Parieren ist sehr effektiv, wenn du mit dem Faustschild geübt bist',
+        'Phase 2 Zwillingsmond-Angriff: Springe dreimal synchron, wenn die Monde den Boden berühren',
+        'Sie ist extrem aggressiv — bleibe nah dran und rolle nach links vorne',
+        'Nutze Magie- und Feuerresistenz (wie Goldener Schwur oder Leber-Preps)'
+      ] 
+    }
+  },
+{
+    id: 'messmer-the-impaler', category: 'dlc',
+    image: './img/messmer.webp',
+    en: { 
+      name: 'Messmer the Impaler', quote: '"Mother, Marika... Aright, I shall grant thee thy purgeth..."', region: 'Shadow Keep',
+      lore: 'The hidden son of Queen Marika, cursed with an abyssal serpent dwelling within him. He led the brutal crusade to purge the Hornsent in the Land of Shadow, sealing away their tower with his dark flame.',
+      location: 'The top floor of the Specimen Storehouse inside Shadow Keep.',
+      mapDesc: 'Shadow Keep — the massive black fortress dominating the center of Scadu Altus.',
+      grace: 'Site of Grace: Messmer\'s Dark Chamber appears after victory.',
+      strategy: [
+        'Phase 1 opening spear plunge: delay your roll until he strikes the ground, then dodge twice',
+        'Phase 2 Base Serpent attacks: watch the giant snake heads, roll left just before they bite',
+        'He is susceptible to Bleed (Hemorrhage) and Frostbite damage',
+        'Flamesrake Talisman +3 is mandatory to survive his fiery combos'
+      ] 
+    },
+    pl: { 
+      name: 'Messmer Palownik', quote: '"Matko, Mariko... Dobrze, ukarzę ich tak, jak żądasz..."', region: 'Ostęp Cienia',
+      lore: 'Ukryty syn Królowej Mariki, przeklęty przez otchłannego węża żyjącego w jego wnętrzu. Poprowadził brutalną krucjatę mającą na celu oczyszczenie Krainy Cienia, pieczętując wieżę swoim mrocznym płomieniem.',
+      location: 'Najwyższe piętro Magazynu Osobliwości w Ostępie Cienia.',
+      mapDesc: 'Ostęp Cienia (Shadow Keep) — wielka czarna forteca w centrum Altusu Cienia.',
+      grace: 'Miejsce Łaski: Mroczna Komnata Messmera pojawia się po zwycięstwie.',
+      strategy: [
+        'Atak z wyskoku na początku fazy 1: opóźnij unik, aż uderzy w ziemię, a potem wykonaj drugi unik przed wybuchem',
+        'Ataki węża w fazie 2: obserwuj wielkie głowy węży, rób unik w lewo tuż przed kęsem',
+        'Jest podatny na statusy Krwawienia (Bleed) oraz Odmrożenia (Frostbite)',
+        'Talizman Ognistego Smoka +3 jest kluczowy, by przetrwać jego ogniste kombinacje'
+      ] 
+    },
+    de: { 
+      name: 'Messmer der Pfähler', quote: '"Mutter, Marika... Nun gut, ich gewähre ihnen ihre Säuberung..."', region: 'Schattenbergfried',
+      lore: 'Der verborgene Sohn von Königin Marika, verflucht mit einer abyssischen Schlange in seinem Inneren. Er führte den brutalen Kreuzzug im Schattenland an.',
+      location: 'Die oberste Etage des Probenlagers im Schattenbergfried.',
+      mapDesc: 'Schattenbergfried — die massive schwarze Festung im Zentrum von Scadu-Altus.',
+      grace: 'Ort der Gnade: Messmers dunkle Kammer erscheint nach dem Sieg.',
+      strategy: [
+        'Phase 1 Eröffnungsangriff: Verzögere deine Rolle, bis er den Boden trifft, und weiche dann der Explosion aus',
+        'Phase 2 Schlangenangriffe: Beobachte die riesigen Schlangenköpfe, rolle kurz vor dem Biss nach links',
+        'Er ist anfällig für Blutung (Bleed) und Erfrierung (Frostbite)',
+        'Flammenrachen-Talisman +3 ist dringend empfohlen, um seine feurigen Combos zu überleben'
+      ] 
+    }
+  },
+{
+    id: 'midra-lord-of-frenzied-flame', category: 'dlc',
+    image: './img/midra.webp',
+    en: { 
+      name: 'Midra, Lord of Frenzied Flame', quote: '"The depth of your foolishness... endure it."', region: 'Abyssal Woods',
+      lore: 'A scholar who was tortured by the Hornsent for investigating the forbidden flame. Maddened by centuries of agony, he finally fails to hold back the curse and becomes the true, agonizing Lord of the Frenzied Flame.',
+      location: 'Deep inside Midra\'s Manse, at the end of the Abyssal Woods.',
+      mapDesc: 'Midra\'s Manse — hidden manor deep within the terrifying, dark Abyssal Woods.',
+      grace: 'Site of Grace: Discussion Chamber appears after victory.',
+      strategy: [
+        'Phase 1 is a joke (weak old man form), just hit him until the real cutscene triggers',
+        'In Phase 2, watch your Madness bar. Equip the Clarifying Horn Duruand talisman to raise resistance',
+        'Avoid his yellow flame tracking beam by sprinting sideways',
+        'He is very susceptible to Pierce damage and heavy stagger attacks'
+      ] 
+    },
+    pl: { 
+      name: 'Midra, Pan Szalonego Płomienia', quote: '"Głębia twojej głupoty... znieś ją."', region: 'Otchłanne Lasy',
+      lore: 'Mędrzec, który był torturowany przez Hornsentów za badanie zakazanego płomienia. Oszalały z powodu wieków agonii, ostatecznie ulega klątwie i staje się prawdziwym Władcą Szalonego Płomienia.',
+      location: 'Głęboko w Posiadłości Midry, na końcu Otchłannych Lasów.',
+      mapDesc: 'Posiadłość Midry — ukryty dwór głęboko w mrocznych, przerażających Otchłannych Lasach.',
+      grace: 'Miejsce Łaski: Komnata Dyskusyjna pojawia się po walce.',
+      strategy: [
+        'Faza 1 to formalność (postać słabego starca), po prostu bij go, aż odpali się przerywnik filmowy',
+        'W fazie 2 uważaj na pasek Szaleństwa (Madness). Załóż talizman zwiększający skupienie/odporność',
+        'Unikaj jego żółtego promienia ognia, biegając w bok, zamiast robić uniki',
+        'Jest bardzo podatny na obrażenia kłute (Pierce) oraz ataki przełamujące posturę'
+      ] 
+    },
+    de: { 
+      name: 'Midra, Herr der Rasenden Flamme', quote: '"Die Tiefe deiner Torheit... ertrage sie."', region: 'Abgrundtiefer Wald',
+      lore: 'Ein Gelehrter, der von den Hornsent gefoltert wurde, weil er die verbotene Flamme erforschte. Nach Jahrhunderten der Agonie wird er zum Herrn der Rasenden Flamme.',
+      location: 'Tief in Midras Anwesen, am Ende des Abgrundtiefen Waldes.',
+      mapDesc: 'Midras Anwesen — verstecktes Herrenhaus tief im düsteren Abgrundtiefen Wald.',
+      grace: 'Ort der Gnade: Diskussionskammer erscheint nach dem Sieg.',
+      strategy: [
+        'Phase 1 ist reine Formsache (schwache Greisenform), schlage ihn einfach bis zur Zwischensequenz',
+        'Achte in Phase 2 auf deine Wahnsinns-Leiste. Trage Fokus-erhöhende Ausrüstung',
+        'Weiche seinem gelben Flammenstrahl aus, indem du seitlich sprintest',
+        'Er ist sehr anfällig für Stoßschaden (Pierce) und schwere Haltungsangriffe'
+      ] 
+    }
+  },
 
-
-
-
-
-
-
-
+{
+    id: 'promised-consort-radahn', category: 'dlc',
+    image: './img/radahn-dlc.webp',
+    en: { 
+      name: 'Promised Consort Radahn', quote: '"I am Miquella. And I have spoken of my vow."', region: 'Enir-Ilim',
+      lore: 'The ultimate climax of Miquella\'s schemes. Raised from the dead using Mohg\'s vessel, Starscourge Radahn returns in his physical prime to fulfill an ancient vow and become Miquella\'s Promised Consort god.',
+      location: 'The highest peak of Enir-Ilim, accessed after burning the Sealing Tree.',
+      mapDesc: 'Enir-Ilim — the holy capital tower floating above the Land of Shadow.',
+      grace: 'Site of Grace: Gate of Divinity appears after final victory.',
+      strategy: [
+        'The hardest boss in Elden Ring. A high-stability Greatshield + Pokey Sword (Spear/Thrust) makes this manageable',
+        'Phase 2 holy light pillars spawn wherever his swords strike — roll diagonally forward and left to stay behind him',
+        'When Miquella grabs you, you will receive a mark. If grabbed a second time, you instantly die. Use Miquella\'s Broken Rune to dispel it',
+        'Maximize Holy and Physical defense. Golden Vow, Black Flame\'s Protection, and Haligdrake Talisman +3 are essential'
+      ] 
+    },
+    pl: { 
+      name: 'Obiecany Małżonek Radahn', quote: '"Jestem Miquella. I rzekłem me przyrzeczenie."', region: 'Enir-Ilim',
+      lore: 'Ostateczny cel planów Miquelli. Wskrzeszony z martwych w ciele Mohga, Gwiezdna Plaga Radahn powraca u szczytu swojej potęgi fizycznej, by dopełnić starożytną przysięgę i zostać bogiem-małżonkiem Miquelli.',
+      location: 'Najwyższy szczyt Enir-Ilim, dostępny po spaleniu Drzewa Pieczętującego.',
+      mapDesc: 'Enir-Ilim — święta wieża-stolica unosząca się nad Krainą Cienia.',
+      grace: 'Miejsce Łaski: Brama Boskości pojawia się po ostatecznym zwycięstwie.',
+      strategy: [
+        'Najtrudniejszy boss w grze. Wielka tarcza (Greatshield) o wysokiej stabilności i broń kłuta (Włócznia) bardzo ułatwiają walkę',
+        'Faza 2: filary świętego światła wybuchają tam, gdzie uderzają miecze — rób uniki po skosie w przód i w lewo, by zostać za jego plecami',
+        'Gdy Miquella cię złapie, dostaniesz znak. Drugie złapanie oznacza natychmiastową śmierć. Użyj Rozbitego Runu Miquelli, by usunąć urok',
+        'Maksymalizuj obronę fizyczną i świętą. Talizman Haligdrzewa +3 i Złoty Porządek są niezbędne'
+      ] 
+    },
+    de: { 
+      name: 'Verheißener Gemahl Radahn', quote: '"Ich bin Miquella. Und ich habe mein Gelübde gesprochen."', region: 'Enir-Ilim',
+      lore: 'Der Höhepunkt von Miquellas Plänen. Von den Toten auferstanden in Mohgs Körper, kehrt Radahn in seiner physischen Blütezeit zurück, um Miquellas verheißener Gott-Gemahl zu werden.',
+      location: 'Der höchste Gipfel von Enir-Ilim, erreichbar nach dem Verbrennen des Versiegelungsbaums.',
+      mapDesc: 'Enir-Ilim — der heilige Hauptstadtturm, der über dem Schattenland schwebt.',
+      grace: 'Ort der Gnade: Tor der Göttlichkeit erscheint nach dem finalen Sieg.',
+      strategy: [
+        'Der schwerste Boss im Spiel. Ein Großschild mit hoher Stabilität und eine Stoßwaffe (Speer) helfen extrem',
+        'Phase 2: Heilige Lichtsäulen spawnen dort, wo seine Schwerter treffen — rolle diagonal nach vorne links, um hinter ihm zu bleiben',
+        'Wenn Miquella dich greift, wirst du markiert. Ein zweiter Griff bedeutet den sofortigen Tod. Nutze Miquellas zerbrochene Rune, um es zu reinigen',
+        'Maximiere die heilige und physische Verteidigung. Haligbaum-Talisman +3 ist Pflicht'
+      ] 
+    }
+  }
+// DLCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
+// DLCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
+// DLCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
+// DLCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
+// DLCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
+// DLCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
+// DLCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
+// DLCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
+// DLCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
+// DLCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
+// DLCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
+// DLCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
+// DLCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
+// DLCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
 
 ];
 
@@ -661,5 +897,92 @@ window.ER_BUILDS = [
         'Geladenes R2 ausführen — One-Shot garantiert'
       ]
     }
+  },
+  // ─── NOWE BUILDY Z PODSTAWKI ───────────────────────────────────────────────
+  {
+    id: 'comet-azur-mage', type: 'intelligence',
+    en: { name: 'Infinite Comet Azur', typeLabel: 'Intelligence / One-Shot Mage', playstyle: 'Absolute glass cannon designed to delete bosses in 5 seconds with a continuous laser beam',
+      weapon: 'Lusat\'s Glintstone Staff +10 · Carian Regal Scepter (off-hand for passive boost)',
+      ash: 'No Skill (default staff)',
+      helmet: 'Azur\'s Glintstone Crown (buffs Comet Azur)', armor: 'Sorcerer Robes', gloves: 'Battlemage Manchettes', legs: 'Sorcerer Leggings',
+      talismans: 'Graven-Mass Talisman · Magic Scorpion Charm · Radagon Icon · Ritual Sword Talisman',
+      stats: 'Vigor 40 · Mind 40 · Endurance 20 · Strength 10 · Intelligence 80 · Cerulean Hidden Tear (in Flask)' },
+    pl: { name: 'Nieskończona Kometa Azura', typeLabel: 'Inteligencja / Mag One-Shot', playstyle: 'Typowy glass cannon stworzony by wyparować bossa w 5 sekund za pomocą ciągłego lasera',
+      weapon: 'Lusat\'s Glintstone Staff +10 · Carian Regal Scepter w lewej ręce',
+      ash: 'Brak umiejętności',
+      helmet: 'Korona Azura (wzmacnia Kometę Azura)', armor: 'Szaty Czarodzieja', gloves: 'Mankiety Maga Bitewnego', legs: 'Spodnie Czarodzieja',
+      talismans: 'Graven-Mass · Magic Scorpion · Radagon Icon · Ritual Sword',
+      stats: 'Vigor 40 · Mind 40 · Endurance 20 · Strength 10 · Intelligence 80 · Cerulean Hidden Tear (w flakonie)' },
+    de: { name: 'Unendlicher Komet Azur', typeLabel: 'Intelligenz / One-Shot Magier', playstyle: 'Absolute Glasskanone, um Bosse in 5 Sekunden mit einem kontinuierlichen Laserstrahl zu vernichten',
+      weapon: 'Lusat\'s Glintstone Staff +10 · Carian Regal Scepter (Offhand)',
+      ash: 'Keine Fertigkeit',
+      helmet: 'Azurs Glintsteinkrone (bufft Komet Azur)', armor: 'Zaubererrobe', gloves: 'Kampfmagier-Manschetten', legs: 'Zaubererhose',
+      talismans: 'Graven-Mass · Magic Scorpion · Radagon Icon · Ritual Sword',
+      stats: 'Vigor 40 · Mind 40 · Endurance 20 · Strength 10 · Intelligence 80 · Cerulean Hidden Tear (in Flasche)' }
+  },
+  {
+    id: 'double-curved-bleed', type: 'arcane',
+    en: { name: 'Scavenger\'s Jump-Attack Bleed', typeLabel: 'Arcane / Dexterity', playstyle: 'Melts health bars instantly via dual-wield running and jumping multi-hits',
+      weapon: 'Scavenger\'s Curved Sword +25 (Occult or Blood affinity) x2',
+      ash: 'Seppuku (on both swords for instantaneous bleed build-up)',
+      helmet: 'White Mask (boosts ATK on bleed)', armor: 'Raptor\'s Black Feathers (boosts jump attacks)', gloves: 'Malformed Dragon Gauntlets', legs: 'Bull-Goat Greaves',
+      talismans: 'Claw Talisman · Lord of Blood\'s Exultation · Rotten Winged Sword Insignia · Millicent\'s Prosthesis',
+      stats: 'Vigor 50 · Endurance 25 · Strength 15 · Dexterity 45 · Arcane 60' },
+    pl: { name: 'Podwójne Zakrzywione Miecze Krwawienie', typeLabel: 'Arkana / Zręczność', playstyle: 'Natychmiastowo niszczy paski zdrowia poprzez ataki z wyskoku i w biegu wywołujące multi-hit',
+      weapon: 'Zakrzywiony Miecz Padlożercy +25 (Okultyzm lub Krew) x2',
+      ash: 'Seppuku (na obu mieczach dla błyskawicznego krwawienia)',
+      helmet: 'Biała Maska (boost ATK przy krwawieniu)', armor: 'Czarne Pióra Raptora (wzmacnia ataki z wyskoku)', gloves: 'Rękawice Zniekształconego Smoka', legs: 'Nogi Bull-Goat',
+      talismans: 'Claw Talisman · Lord of Blood\'s Exultation · Rotten Winged · Millicent\'s Prosthesis',
+      stats: 'Vigor 50 · Endurance 25 · Strength 15 · Dexterity 45 · Arcane 60' },
+    de: { name: 'Doppel-Krummschwert Blutung', typeLabel: 'Arkan / Geschick', playstyle: 'Schmilzt Lebensbalken sofort durch Sprungangriffe und Multi-Hits',
+      weapon: 'Scavenger\'s Curved Sword +25 (Okkult oder Blut) x2',
+      ash: 'Seppuku (auf beiden Schwertern für sofortige Blutung)',
+      helmet: 'Weiße Maske', armor: 'Raptor\'s Black Feathers (erhöht Sprungangriffe)', gloves: 'Fehlgebildete Drachenhandschuhe', legs: 'Bockziegen-Beinschienen',
+      talismans: 'Claw Talisman · Lord of Blood\'s Exultation · Rotten Winged · Millicent\'s Prosthesis',
+      stats: 'Vigor 50 · Endurance 25 · Strength 15 · Dexterity 45 · Arcane 60' }
+  },
+  // ─── BUILDY Z DLC (Z FIOLETOWYM EMBLEMATEM) ─────────────────────────────────
+  {
+    id: 'bloodfiend-arm', type: 'arcane',
+    en: { name: 'Bloodfiend\'s Giga-Bonk', typeLabel: 'Strength / Arcane Bleed', playstyle: '<span style="background:rgba(174,129,255,0.2);color:#ae81ff;padding:2px 6px;border-radius:4px;font-weight:bold;box-shadow:0 0 8px rgba(174,129,255,0.4)">DLC BUILD</span> Overpowered heavy charge attack that forces bleed and stagger on every second hit',
+      weapon: 'Bloodfiend\'s Arm +25 (Blood affinity for massive bleed scaling)',
+      ash: 'Cragblade (for extra physical and posture damage)',
+      helmet: 'White Mask', armor: 'Ansbach\'s Attire', gloves: 'Verdigris Gauntlets', legs: 'Verdigris Greaves',
+      talismans: 'Axe Talisman · Lord of Blood\'s Exultation · Two-Handed Sword Talisman · Dragoncrest Greatshield',
+      stats: 'Vigor 60 · Endurance 35 · Strength 50 · Dexterity 12 · Arcane 65' },
+    pl: { name: 'Giga-Bonk Krwawego Wieśniaka', typeLabel: 'Siła / Arkana Krwawienie', playstyle: '<span style="background:rgba(174,129,255,0.2);color:#ae81ff;padding:2px 6px;border-radius:4px;font-weight:bold;box-shadow:0 0 8px rgba(174,129,255,0.4)">DLC BUILD</span> Przesadzony ciężki ładowany atak, który wymusza krwawienie i oszołomienie praktycznie co drugie uderzenie',
+      weapon: 'Bloodfiend\'s Arm +25 (Ścieżka Krwi dla potężnego skalowania)',
+      ash: 'Cragblade (zwiększa obrażenia fizyczne i posturę)',
+      helmet: 'Biała Maska', armor: 'Strój Ansbacha', gloves: 'Rękawice Śniedzi', legs: 'Nagolenniki Śniedzi',
+      talismans: 'Axe Talisman · Lord of Blood\'s Exultation · Two-Handed Sword Talisman · Dragoncrest Greatshield',
+      stats: 'Vigor 60 · Endurance 35 · Strength 50 · Dexterity 12 · Arcane 65' },
+    de: { name: 'Blutelfen-Giga-Bonk', typeLabel: 'Stärke / Arkan Blutung', playstyle: '<span style="background:rgba(174,129,255,0.2);color:#ae81ff;padding:2px 6px;border-radius:4px;font-weight:bold;box-shadow:0 0 8px rgba(174,129,255,0.4)">DLC BUILD</span> Extrem starker geladener schwerer Angriff, der fast bei jedem zweiten Treffer Blutung und Haltungsbruch erzwingt',
+      weapon: 'Bloodfiend\'s Arm +25 (Blut-Affinität)',
+      ash: 'Cragblade (für extra Haltungsschaden)',
+      helmet: 'Weiße Maske', armor: 'Ansbachs Gewand', gloves: 'Grünspan-Handschuhe', legs: 'Grünspan-Beinschienen',
+      talismans: 'Axe Talisman · Lord of Blood\'s Exultation · Two-Handed Sword Talisman · Dragoncrest Greatshield',
+      stats: 'Vigor 60 · Endurance 35 · Strength 50 · Dexterity 12 · Arcane 65' }
+  },
+  {
+    id: 'perfume-bottle-spark', type: 'dexterity',
+    en: { name: 'Lightning Perfume Bomber', typeLabel: 'Dexterity / Faith', playstyle: '<span style="background:rgba(174,129,255,0.2);color:#ae81ff;padding:2px 6px;border-radius:4px;font-weight:bold;box-shadow:0 0 8px rgba(174,129,255,0.4)">DLC BUILD</span> Creates massive explosions at the enemy\'s feet by aiming the Rolling Sparks skill directly into the ground',
+      weapon: 'Lightning Perfume Bottle +25',
+      ash: 'Rolling Sparks (essential for the multi-hit ground detonation)',
+      helmet: 'Rakshasa Helm', armor: 'Rakshasa Armor', gloves: 'Rakshasa Gauntlets', legs: 'Rakshasa Greaves (full set boosts all damage)',
+      talismans: 'Perfumer\'s Talisman · Lightning Scorpion Charm · Shard of Alexander · Ritual Sword Talisman',
+      stats: 'Vigor 50 · Mind 25 · Endurance 20 · Dexterity 60 · Faith 30' },
+    pl: { name: 'Bomba z Butelek Perfum', typeLabel: 'Zręczność / Wiara', playstyle: '<span style="background:rgba(174,129,255,0.2);color:#ae81ff;padding:2px 6px;border-radius:4px;font-weight:bold;box-shadow:0 0 8px rgba(174,129,255,0.4)">DLC BUILD</span> Tworzy potężne, nakładające się eksplozje pod stopami wrogów poprzez celowanie umiejętnością Rolling Sparks bezpośrednio w ziemię',
+      weapon: 'Lightning Perfume Bottle +25',
+      ash: 'Rolling Sparks (kluczowe dla wywołania eksplozji wielokrotnej)',
+      helmet: 'Hełm Rakshasy', armor: 'Zbroja Rakshasy', gloves: 'Rękawice Rakshasy', legs: 'Nogi Rakshasy (cały set zwiększa zadawane obrażenia)',
+      talismans: 'Perfumer\'s Talisman · Lightning Scorpion · Shard of Alexander · Ritual Sword',
+      stats: 'Vigor 50 · Mind 25 · Endurance 20 · Zręczność 60 · Wiara 30' },
+    de: { name: 'Blitz-Parfüm-Bomber', typeLabel: 'Geschick / Glaube', playstyle: '<span style="background:rgba(174,129,255,0.2);color:#ae81ff;padding:2px 6px;border-radius:4px;font-weight:bold;box-shadow:0 0 8px rgba(174,129,255,0.4)">DLC BUILD</span> Erzeugt gewaltige Explosionen zu Füßen des Gegners, indem man das Talent "Rolling Sparks" direkt auf den Boden richtet',
+      weapon: 'Lightning Perfume Bottle +25',
+      ash: 'Rolling Sparks',
+      helmet: 'Rakshasa-Helm', armor: 'Rakshasa-Rüstung', gloves: 'Rakshasa-Handschuhe', legs: 'Rakshasa-Beinschienen',
+      talismans: 'Perfumer\'s Talisman · Lightning Scorpion · Shard of Alexander · Ritual Sword',
+      stats: 'Vigor 50 · Mind 25 · Endurance 20 · Geschick 60 · Glaube 30' }
   }
+  
 ];

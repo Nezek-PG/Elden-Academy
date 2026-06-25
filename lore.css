@@ -269,3 +269,30 @@ text-shadow: 0 0 50px rgba(197, 160, 89, 0.9);
     right: auto;
   }
 }
+/* ==========================================================================
+   DLC LORE SECTION (PURPLE OVERRIDE)
+   ========================================================================== */
+.dlc-item {
+  /* Zastępuje złoto fioletem grawitacyjnym/Miquelli dla tego konkretnego bloku */
+  --gold: #ae81ff;       
+  --gold-dark: #7b52cc;  
+}
+
+.dlc-item .timeline-meta {
+  color: var(--gold);
+  text-shadow: 0 0 8px rgba(174, 129, 255, 0.4);
+}
+
+.dlc-item .timeline-badge {
+  border-color: var(--gold);
+}
+
+.dlc-item:hover .timeline-badge {
+  box-shadow: 0 0 15px var(--gold);
+  background: var(--gold);
+}
+
+.dlc-item .timeline-panel:hover {
+  border-color: var(--gold);
+  box-shadow: 0 10px 30px rgba(174, 129, 255, 0.15);
+}

@@ -57,7 +57,7 @@ const ER = (function () {
     </div>`;
   }
 
-  const i18n = {
+const i18n = {
     en: {
       siteName: 'Elden Academy', navHome: 'Home', navBosses: 'Bosses', navBuilds: 'Builds', navArchive: 'Archive', navEndings: 'Endings',
       heroLabel: 'Recommended Boss Order', heroTitle1: 'New Boss', heroTitle2: 'Discovered',
@@ -76,7 +76,7 @@ const ER = (function () {
       filterInt: 'Intelligence', filterArc: 'Arcane',
       weapon: 'Weapon', talismans: 'Talismans', helmet: 'Helmet', armor: 'Armor', gloves: 'Gloves',
       legs: 'Legs', ash: 'Ash of War', stats: 'Key Stats', playstyle: 'Playstyle', offhand: 'Offhand',
-      catShard: 'Shardbearers', catLegend: 'Legends', catField: 'Field Bosses', catFinal: 'Final Bosses',
+      catShard: 'Shardbearers', catLegend: 'Legends', catField: 'Field Bosses', catFinal: 'Final Bosses', catDLC: 'Erdtree dlc',
       featuredUnlock: 'Featured', region: 'Region', wikiLink: 'View on Elden Ring Wiki',
       openPhoto: 'Open Photo', openMap: 'Interactive Map',
       endingsLabel: 'Lore', endingsTitle1: 'All', endingsTitle2: 'Endings',
@@ -102,7 +102,7 @@ const ER = (function () {
       filterInt: 'Inteligencja', filterArc: 'Arkana',
       weapon: 'Broń', talismans: 'Talizmany', helmet: 'Hełm', armor: 'Zbroja', gloves: 'Rękawice',
       legs: 'Nogi', ash: 'Popiół Wojny', stats: 'Kluczowe Staty', playstyle: 'Styl Gry', offhand: 'Lewa Ręka',
-      catShard: 'Nosiciele Odłamków', catLegend: 'Legendy', catField: 'Bossowie Polowi', catFinal: 'Bossowie Końcowi',
+      catShard: 'Nosiciele Odłamków', catLegend: 'Legendy', catField: 'Bossowie Polowi', catFinal: 'Bossowie Końcowi', catDLC: 'Cień Drzewa Złota',
       featuredUnlock: 'Polecany', region: 'Region', wikiLink: 'Zobacz w Elden Ring Wiki',
       openPhoto: 'Otwórz Zdjęcie', openMap: 'Mapa Interaktywna',
       endingsLabel: 'Lore', endingsTitle1: 'Wszystkie', endingsTitle2: 'Zakończenia',
@@ -128,7 +128,7 @@ const ER = (function () {
       filterInt: 'Intelligenz', filterArc: 'Arkan',
       weapon: 'Waffe', talismans: 'Talismane', helmet: 'Helm', armor: 'Rüstung', gloves: 'Handschuhe',
       legs: 'Beine', ash: 'Kriegsasche', stats: 'Wichtige Werte', playstyle: 'Spielstil', offhand: 'Nebenhand',
-      catShard: 'Scherbenhüter', catLegend: 'Legenden', catField: 'Feldbosse', catFinal: 'Endbosse',
+      catShard: 'Scherbenhüter', catLegend: 'Legenden', catField: 'Feldbosse', catFinal: 'Endbosse', catDLC: 'Shadow of the Erdtree',
       featuredUnlock: 'Empfohlen', region: 'Region', wikiLink: 'Im Elden Ring Wiki ansehen',
       openPhoto: 'Foto Öffnen', openMap: 'Interaktive Karte',
       endingsLabel: 'Lore', endingsTitle1: 'Alle', endingsTitle2: 'Enden',
@@ -192,14 +192,15 @@ const ER = (function () {
     if (l) { setTimeout(() => l.classList.add('hidden-load'), 400); }
   }
 
-  const catKeys = { all: 'filterAll', shard: 'catShard', legend: 'catLegend', field: 'catField', final: 'catFinal' };
-  const catLabelKeys = { shard: 'catShard', legend: 'catLegend', field: 'catField', final: 'catFinal' };
+  const catKeys = { all: 'filterAll', shard: 'catShard', legend: 'catLegend', field: 'catField', final: 'catFinal', dlc: 'catDLC' };
+  const catLabelKeys = { shard: 'catShard', legend: 'catLegend', field: 'catField', final: 'catFinal', dlc: 'catDLC' };
   const catImages = window.ER_IMG ? {
     all: ER_IMG.categoryPhoto('all'),
     shard: ER_IMG.categoryPhoto('shard'),
     legend: ER_IMG.categoryPhoto('legend'),
     field: ER_IMG.categoryPhoto('field'),
-    final: ER_IMG.categoryPhoto('final')
+    final: ER_IMG.categoryPhoto('final'),
+    dlc: ER_IMG.categoryPhoto('dlc') // Upewnij się, że ER_IMG obsługuje klucz 'dlc' lub podmień to na link URL
   } : {};
 
   function renderCategories() {
@@ -286,8 +287,10 @@ function renderBossDetailPage() {
     const wikiUrl = window.ER_IMG ? ER_IMG.bossWiki(b.id) : '#';
     const photoUrl = bossImage(b);
     
-    // 1. Base URL for the cleaner checklist view
-    let mapUrl = "https://mapgenie.io/elden-ring/maps/the-lands-between";
+    // 1. Dynamic Selection of the MapGenie Base URL
+    let mapUrl = b.category === 'dlc' 
+      ? "https://mapgenie.io/elden-ring/maps/the-shadow-realm" 
+      : "https://mapgenie.io/elden-ring/maps/the-lands-between";
     
     // 2. Grab the exact name being used for the site title (d.name)
     // We clean it up by splitting at commas to pass a perfect keyword to MapGenie
@@ -333,7 +336,7 @@ function renderBossDetailPage() {
       </div>`;
     document.title = d.name;
     setupScrollAnim();
-  }
+}
 
   let activeBuildFilter = 'all';
 
@@ -388,7 +391,7 @@ function renderBossDetailPage() {
   }
 
   // ─── ENDINGS DATA ────────────────────────────────────────────────────────────
-  const ER_ENDINGS = [
+const ER_ENDINGS = [
     {
       id: 'elden-lord',
       color: '#c5a059',
@@ -482,7 +485,7 @@ function renderBossDetailPage() {
         steps: [
           'Finde Ranni in Rannis Aufstieg in Den Drei Schwestern (Liurnia). Stimme zu, ihr zu dienen.',
           'Schließe Blaidds Questreihe ab — folge ihm zum Siofra-Fluss und Nokron.',
-          'Besiege Radahn, um Nokron, die Ewige Stadt zu öffnen.',
+          'Besiege Radahn, um Nokron, die Ewige Stadt zu open.',
           'Hole die Fingerschlächterklinge aus dem versteckten Schatz in Nokron.',
           'Gib Ranni die Klinge — sie gibt dir die Carian-Umkehrstatue.',
           'Nutze die Statue im Göttlichen Turm von Liurnia, dann nutze das Todesmal oben.',
@@ -697,8 +700,48 @@ function renderBossDetailPage() {
           'Der Abspann zeigt den gewählten NPC auf dem Thron.'
         ]
       }
+    },
+    {
+      id: 'shadow-erdtree-memory',
+      color: '#ae81ff',
+      en: {
+        name: 'Memory of Miquella',
+        type: 'DLC Final Cutscene',
+        difficulty: 'Extreme — requires defeating Promised Consort Radahn',
+        desc: 'By defeating Radahn and stepping into the Gate of Divinity, the Tarnished triggers a hidden memory revealing Miquella\'s pure, tragic vow before his ascension.',
+        steps: [
+          'Defeat Promised Consort Radahn at the highest point of Enir-Ilim.',
+          'Once the fight ends, look towards the glowing center of the arena near the Gate of Divinity.',
+          'Interact with the golden light shard floating on the ground.',
+          'Watch the final memory cutscene — this concludes the narrative of the Shadow of the Erdtree DLC.'
+        ]
+      },
+      pl: {
+        name: 'Wspomnienie Miquelli',
+        type: 'Finałowy Przerywnik DLC',
+        difficulty: 'Ekstremalne — wymaga pokonania Obiecanego Małżonka Radahna',
+        desc: 'Pokonując Radahna i wchodząc do Bramy Boskości, Zhańbiony aktywuje ukryte wspomnienie, ujawniające czystą, tragiczną przysięgę Miquelli złożoną przed jego boską eskapadą.',
+        steps: [
+          'Pokonaj Obiecanego Małżonka Radahna na najwyższym szczycie Enir-Ilim.',
+          'Gdy walka dobiegnie końca, spójrz w kierunku świecącego centrum areny przy Bramie Boskości.',
+          'Wejdź w interakcję ze złotym odłamkiem światła unoszącym się nad ziemią.',
+          'Obejrzyj finałowe wspomnienie — to kończy całą oś fabularną dodatku Shadow of the Erdtree.'
+        ]
+      },
+      de: {
+        name: 'Miquellas Erinnerung',
+        type: 'DLC Finale Zwischensequenz',
+        difficulty: 'Extrem — erfordert den Sieg über den verheißenen Gemahl Radahn',
+        desc: 'Durch den Sieg über Radahn und das Betreten des Tors der Göttlichkeit löst der Befleckte eine verborgene Erinnerung aus, die Miquellas reines, tragisches Gelübde vor seinem Aufstieg enthüllt.',
+        steps: [
+          'Besiege den Verheißenen Gemahl Radahn auf dem höchsten Gipfel von Enir-Ilim.',
+          'Sobald der Kampf vorbei ist, schaue in die leuchtende Mitte der Arena nahe dem Tor der Göttlichkeit.',
+          'Interagiere mit dem goldenen Lichtfragment, das auf dem Boden schwebt.',
+          'Schau dir die letzte Erinnerungssequenz an — dies schließt die Geschichte des Shadow of the Erdtree DLCs ab.'
+        ]
+      }
     }
-  ];
+];
 
   function renderEndingsGrid() {
     const grid = document.getElementById('endingsGrid');
